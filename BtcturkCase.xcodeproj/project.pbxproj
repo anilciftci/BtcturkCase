@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		EE7361852CFA8C94009B63E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361842CFA8C94009B63E5 /* AppDelegate.swift */; };
 		EE7361872CFA8C94009B63E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361862CFA8C94009B63E5 /* SceneDelegate.swift */; };
-		EE7361892CFA8C94009B63E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361882CFA8C94009B63E5 /* ViewController.swift */; };
-		EE73618C2CFA8C94009B63E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE73618A2CFA8C94009B63E5 /* Main.storyboard */; };
+		EE7361892CFA8C94009B63E5 /* CryptoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361882CFA8C94009B63E5 /* CryptoListViewController.swift */; };
 		EE73618E2CFA8C95009B63E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE73618D2CFA8C95009B63E5 /* Assets.xcassets */; };
 		EE7361912CFA8C95009B63E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE73618F2CFA8C95009B63E5 /* LaunchScreen.storyboard */; };
 		EE73619C2CFA8C95009B63E5 /* BtcturkCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE73619B2CFA8C95009B63E5 /* BtcturkCaseTests.swift */; };
 		EE7361A62CFA8C95009B63E5 /* BtcturkCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361A52CFA8C95009B63E5 /* BtcturkCaseUITests.swift */; };
 		EE7361A82CFA8C95009B63E5 /* BtcturkCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361A72CFA8C95009B63E5 /* BtcturkCaseUITestsLaunchTests.swift */; };
+		EE7361B92CFAA0C1009B63E5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361B82CFAA0C1009B63E5 /* APIService.swift */; };
+		EE7361BD2CFAA459009B63E5 /* CryptoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361BC2CFAA459009B63E5 /* CryptoListViewModel.swift */; };
+		EE7361C12CFAA4CF009B63E5 /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361C02CFAA4CF009B63E5 /* CryptoTableViewCell.swift */; };
+		EE7361C32CFAA4EC009B63E5 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361C22CFAA4EC009B63E5 /* FavoriteCollectionViewCell.swift */; };
+		EE7361C52CFAA52E009B63E5 /* CryptoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7361C42CFAA52E009B63E5 /* CryptoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,7 @@
 		EE7361812CFA8C94009B63E5 /* BtcturkCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BtcturkCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7361842CFA8C94009B63E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7361862CFA8C94009B63E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EE7361882CFA8C94009B63E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EE73618B2CFA8C94009B63E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE7361882CFA8C94009B63E5 /* CryptoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewController.swift; sourceTree = "<group>"; };
 		EE73618D2CFA8C95009B63E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE7361902CFA8C95009B63E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE7361922CFA8C95009B63E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		EE7361A12CFA8C95009B63E5 /* BtcturkCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BtcturkCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7361A52CFA8C95009B63E5 /* BtcturkCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcturkCaseUITests.swift; sourceTree = "<group>"; };
 		EE7361A72CFA8C95009B63E5 /* BtcturkCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtcturkCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE7361B82CFAA0C1009B63E5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		EE7361BC2CFAA459009B63E5 /* CryptoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoListViewModel.swift; sourceTree = "<group>"; };
+		EE7361C02CFAA4CF009B63E5 /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		EE7361C22CFAA4EC009B63E5 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		EE7361C42CFAA52E009B63E5 /* CryptoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,10 @@
 		EE7361832CFA8C94009B63E5 /* BtcturkCase */ = {
 			isa = PBXGroup;
 			children = (
+				EE7361B72CFAA0A1009B63E5 /* Network */,
+				EE7361B42CFAA05C009B63E5 /* BtcturkHomePage */,
 				EE7361842CFA8C94009B63E5 /* AppDelegate.swift */,
 				EE7361862CFA8C94009B63E5 /* SceneDelegate.swift */,
-				EE7361882CFA8C94009B63E5 /* ViewController.swift */,
-				EE73618A2CFA8C94009B63E5 /* Main.storyboard */,
 				EE73618D2CFA8C95009B63E5 /* Assets.xcassets */,
 				EE73618F2CFA8C95009B63E5 /* LaunchScreen.storyboard */,
 				EE7361922CFA8C95009B63E5 /* Info.plist */,
@@ -125,6 +133,58 @@
 				EE7361A72CFA8C95009B63E5 /* BtcturkCaseUITestsLaunchTests.swift */,
 			);
 			path = BtcturkCaseUITests;
+			sourceTree = "<group>";
+		};
+		EE7361B42CFAA05C009B63E5 /* BtcturkHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				EE7361BB2CFAA421009B63E5 /* Cell */,
+				EE7361BA2CFAA40D009B63E5 /* Model */,
+				EE7361B62CFAA091009B63E5 /* ViewModel */,
+				EE7361B52CFAA086009B63E5 /* View */,
+			);
+			path = BtcturkHomePage;
+			sourceTree = "<group>";
+		};
+		EE7361B52CFAA086009B63E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE7361882CFA8C94009B63E5 /* CryptoListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE7361B62CFAA091009B63E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EE7361BC2CFAA459009B63E5 /* CryptoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EE7361B72CFAA0A1009B63E5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EE7361B82CFAA0C1009B63E5 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EE7361BA2CFAA40D009B63E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE7361C42CFAA52E009B63E5 /* CryptoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE7361BB2CFAA421009B63E5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE7361C02CFAA4CF009B63E5 /* CryptoTableViewCell.swift */,
+				EE7361C22CFAA4EC009B63E5 /* FavoriteCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +293,6 @@
 			files = (
 				EE7361912CFA8C95009B63E5 /* LaunchScreen.storyboard in Resources */,
 				EE73618E2CFA8C95009B63E5 /* Assets.xcassets in Resources */,
-				EE73618C2CFA8C94009B63E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7361892CFA8C94009B63E5 /* ViewController.swift in Sources */,
+				EE7361892CFA8C94009B63E5 /* CryptoListViewController.swift in Sources */,
+				EE7361C52CFAA52E009B63E5 /* CryptoItem.swift in Sources */,
+				EE7361C32CFAA4EC009B63E5 /* FavoriteCollectionViewCell.swift in Sources */,
 				EE7361852CFA8C94009B63E5 /* AppDelegate.swift in Sources */,
+				EE7361C12CFAA4CF009B63E5 /* CryptoTableViewCell.swift in Sources */,
+				EE7361BD2CFAA459009B63E5 /* CryptoListViewModel.swift in Sources */,
 				EE7361872CFA8C94009B63E5 /* SceneDelegate.swift in Sources */,
+				EE7361B92CFAA0C1009B63E5 /* APIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EE73618A2CFA8C94009B63E5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EE73618B2CFA8C94009B63E5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EE73618F2CFA8C95009B63E5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +497,6 @@
 				INFOPLIST_FILE = BtcturkCase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +523,6 @@
 				INFOPLIST_FILE = BtcturkCase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
